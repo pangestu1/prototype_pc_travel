@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0F766E;
+  /* Teal 600 */
+  --color-primary-light: #14B8A6;
+  /* Teal 500 */
+  --color-primary-dark: #0F766E;
+  /* Teal 700 */
+  --color-secondary: #0369A1;
+  /* Sky 700 */
+  --color-accent: #F59E0B;
+  /* Amber 500 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  @apply bg-slate-50 text-slate-800;
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+
+  .glass-dark {
+    @apply bg-slate-900/70 backdrop-blur-md border border-slate-700/50;
+  }
+}
